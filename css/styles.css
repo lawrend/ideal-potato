@@ -62,6 +62,127 @@ html
   height: 100%;
 }
 
+
+
+/* NAVBAR BE HERE */
+/* HEADER/NAV */
+
+.navbar {
+  border-bottom: 1px solid #E2E8F0;
+  height: 9vh;
+  width: 100%;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: var(--primarydk);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 6vh;
+  flex-direction: column;
+  background-color: var(--primarylt);
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow:
+  0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-link {
+  color: var(--secondary);
+}
+
+.nav-link:hover {
+  color: var(--offwhite);
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+/* .nav-menu { */
+/*   display: flex; */
+/*   justify-content: space-between; */
+/*   align-items: center; */
+/* } */
+
+/* .nav-item { */
+/*   margin-left: 5rem; */
+/* } */
+
+/* .nav-link{ */
+/*   font-size: 1.6rem; */
+/*   color: var(--blktext); */
+/* } */
+
+/* .nav-link:hover{ */
+/*   color: var(--offwhite); */
+/* } */
+
+/* .nav-logo { */
+/*   font-size: 2.7rem; */
+/*   font-weight: bold; */
+/*   color: var(--secondary); */
+/*   font-weight: bold; */
+/*   margin-right: 20px; */
+/*   margin-left: 20px; */
+/* } */
+
+.brand {
+}
+
+.nav-logo:hover
+{
+  color: var(--offwhite);
+}
+
+
+
 h1
 {
   font-size: 5.0rem;
@@ -86,3 +207,8 @@ h6
 {
   font-size: 1.5rem;
 }
+
+
+.about-pic {
+    visibility: hidden;
+  }
