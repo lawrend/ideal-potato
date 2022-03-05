@@ -131,8 +131,9 @@ html
   transition: 0.5s;
   box-shadow:
   0 10px 27px rgba(0, 0, 0, 0.05);
-  height: 41%; 
+  height: 30%; 
   list-style: none;
+  font-size: 2.1rem;
 }
 
 .nav-logo {
@@ -220,7 +221,7 @@ h6
   font-size: 1.1rem;
 }
 
-/* BASIC CONTAINER */
+/* BASIC CONTAINERS */
 
 .bg-basic {
   overflow-y: auto;
@@ -239,6 +240,16 @@ h6
   height: 30%;
   margin: auto;
 }
+
+.bg-basic-lg {
+  overflow-y: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70%;
+  margin: auto;
+}
+
 
 .front-basic {
   padding: 8px;
@@ -264,6 +275,89 @@ h6
 .header {
 }
 
+/* CARD */
+
+.card
+{
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+}
+
+.card:hover
+{
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.card .-content
+{
+  padding: 2px 16px;
+}
+
+/* BUTTON */
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 40px;
+  /* border-width: 2px; */
+  border: none;
+  height: 50px;
+  width: 180px;
+  transition: 0.3s;
+  padding: 0px;
+  text-transform: uppercase;
+  /* border-color: inherit; */
+}
+
+.header-btn {
+  width: 200px;
+  /* padding-bottom: 10px; */
+}
+
+.btn1 {
+  border: solid; 
+  border-width: 2px;
+  border-color: var(--primarydk);
+  color: var(--primarydk);
+  background-color: var(--offwhite);
+}
+
+.btn1:hover {
+  background-color: var(--primarydk);
+  color: var(--offwhite);
+}
+
+.btn2 {
+  border: none;
+  color: var(--offwhite);
+  background-color: var(--tertiary);
+}
+.btn2:hover {
+  color: var(--offwhite);
+  background-color: var(--secondary);
+}
+
+.btn3 {
+  border: solid 2px;
+  border-color: var(--secondary);
+  color: var(--offwhite);
+  background-color: var(--secondary);
+  width: 220px;
+}
+
+.btn3:hover {
+  border-color: var(--primarylt);
+  background-color: var(--primarylt);
+  color: var(--secondary);
+}
 
 /* ANIMATION - FADE IN ON LOAD */
 @keyframes fadeInAnimation {
@@ -405,6 +499,29 @@ img
 }
 .about-pic {
     visibility: hidden;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  font-size: .5em;
+  background-color: var(--primarylt);
+  color: var(--secondary);
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  height: 40px;
+}
+
+.basic-footer {
+  position: fixed;
+  width: 100%;
+  height: 10%;
 }
 
 /* FOR BIGGER SCREENS */
