@@ -228,32 +228,38 @@ h6
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40%;
+  height: 40vh;
   margin: auto;
 }
 
 .bg-basic-sm {
-  overflow-y: auto;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 30%;
+  /* overflow-y: auto; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  height: 25vh;
   margin: auto;
+  bottom: 0;
 }
 
 .bg-basic-lg {
+  margin-top: 9vh;
   overflow-y: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70%;
+  height: 100vh;
   margin: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+
 }
 
 
 .front-basic {
   padding: 8px;
   color: var(--offwhite);
+  height: 70%;
 }
 
 .bg-parallax {
@@ -273,6 +279,15 @@ h6
 }
 
 .header {
+}
+
+.consult a {
+  text-decoration: none;
+  color: var(--offwhite);
+}
+
+.consult a:hover {
+  color: var(--tertiary);
 }
 
 /* CARD */
