@@ -1,7 +1,8 @@
 /* FONT FAMILIES */
 @import url('https://fonts.googleapis.com/css2?family=Brawler&family=Poiret+One&family=Montserrat:wght@300&family=Mrs+Sheppards&family=Raleway:wght@300&display=swap');
 
-/* fonts */
+
+/* FONTS */
 .rale {
   font-family: 'Raleway', sans-serif;
 }
@@ -27,11 +28,50 @@
   --offwhite:  #f6f1ee; 
   --primarylt: #fbdcce;
   --primaryltop: #fbdcce40;
+  --primaryltslightop: #fbdcce99;
   --primarydk: #efa885;
   --secondary: #5583a6;
   --tertiary:  #f6c270;
+  --tertiaryop: #f6c27070;
   --blktext: #010101;
   --whttext: #fafafa;
+}
+
+.back-primarylt {
+  background-color: var(--primarylt);
+}
+.back-primarydk {
+  background-color: var(--primarydk);
+}
+.back-primaryltop {
+  background-color: var(--primaryltop);
+}
+.back-secondary {
+  background-color: var(--secondary);
+}
+
+.back-tertiary {
+  background-color: var(--tertiary);
+}
+
+.back-tertiaryop {
+  background-color: var(--tertiaryop);
+}
+
+.text-white {
+  color: var(--whttext);
+}
+
+.text-primarylt {
+  color: var(--primarylt);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-tertiary {
+  color: var(--tertiary);
 }
 
 body
@@ -43,7 +83,7 @@ body
 
   margin: 0;
 
-  color: #222;
+  color: var(--blktext);
   background-color: var(--offwhite);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -62,13 +102,10 @@ html
   height: 100%;
 }
 
-
-
 /* NAVBAR BE HERE */
 /* HEADER/NAV */
 
 .navbar {
-  border-bottom: 1px solid #E2E8F0;
   height: 9vh;
   width: 100%;
   top: 0;
@@ -79,6 +116,7 @@ html
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  z-index: 3;
 }
 
 
@@ -87,17 +125,20 @@ html
   left: -100%;
   top: 6vh;
   flex-direction: column;
-  background-color: var(--primarylt);
+  background-color: var(--secondary);
   width: 100%;
-  text-align: center;
+  text-align: left;
   transition: 0.5s;
   box-shadow:
   0 10px 27px rgba(0, 0, 0, 0.05);
+  height: 41%; 
+  list-style: none;
 }
 
 .nav-logo {
   font-size: 2.1rem;
   text-decoration: none;
+  color: var(--secondary);
 }
 
 .nav-menu.active {
@@ -105,7 +146,8 @@ html
 }
 
 .nav-link {
-  color: var(--secondary);
+  color: var(--primarydk);
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -144,7 +186,228 @@ html
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
+.brand {
+}
 
+.nav-logo:hover
+{
+  color: var(--offwhite);
+}
+
+h1 thru h6
+h1
+{
+  font-size: 4.2rem;
+}
+h2
+{
+  font-size: 3.6rem;
+}
+h3
+{
+  font-size: 3.0rem;
+}
+h4
+{
+  font-size: 2.4rem;
+}
+h5
+{
+  font-size: 1.5rem;
+}
+h6
+{
+  font-size: 1.1rem;
+}
+
+/* BASIC CONTAINER */
+
+.bg-basic {
+  overflow-y: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40%;
+  margin: auto;
+}
+
+.bg-basic-sm {
+  overflow-y: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30%;
+  margin: auto;
+}
+
+.front-basic {
+  padding: 8px;
+  color: var(--offwhite);
+}
+
+.bg-parallax {
+  overflow-y: auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  z-index: -1;
+
+}
+
+.front-reg {
+}
+
+.header {
+}
+
+
+/* ANIMATION - FADE IN ON LOAD */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* add class to anything */
+.fade-in-half-sec {
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+
+  animation-fill-mode: forwards;
+}
+.fade-in-1 {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-in-1-and-half {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-in-2 {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-in-3 {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+.longfade {
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* UTILITIES */
+._full-width
+{
+  width: 100%;
+}
+
+._max-full-width
+{
+  max-width: 100%;
+}
+
+._force-full-width
+{
+  min-width: 100%;
+}
+
+._width100
+{
+  width: 100%;
+}
+
+._width75
+{
+  width: 75%;
+}
+
+._width50
+{
+  width: 50%;
+}
+
+._floatLeft
+{
+  float: left !important;
+}
+
+._floatRight
+{
+  float: right !important;
+}
+
+._alignLeft
+{
+  text-align: left;
+}
+
+._alignRight
+{
+  text-align: right;
+}
+
+._alignCenter
+{
+  text-align: center;
+}
+
+._clear
+{
+  display: table;
+  clear: both;
+
+  content: '';
+}
+
+._hidden
+{
+  display: none !important;
+}
+
+/* IMAGES */
+img
+{
+  max-width: 100%;
+  height: auto;
+
+  border-style: none;
+}
+
+.-circle
+{
+  border-radius: 100%;
+}
+
+.-round
+{
+  border-radius: 25%;
+}
+
+.-thumb
+{
+  padding: 5px;
+
+  border: 2px solid #d3d3d3;
+}
+.about-pic {
+    visibility: hidden;
+}
+
+/* FOR BIGGER SCREENS */
 /* .nav-menu { */
 /*   display: flex; */
 /*   justify-content: space-between; */
@@ -173,42 +436,4 @@ html
 /*   margin-left: 20px; */
 /* } */
 
-.brand {
-}
 
-.nav-logo:hover
-{
-  color: var(--offwhite);
-}
-
-
-
-h1
-{
-  font-size: 5.0rem;
-}
-h2
-{
-  font-size: 4.2rem;
-}
-h3
-{
-  font-size: 3.6rem;
-}
-h4
-{
-  font-size: 3.0rem;
-}
-h5
-{
-  font-size: 2.4rem;
-}
-h6
-{
-  font-size: 1.5rem;
-}
-
-
-.about-pic {
-    visibility: hidden;
-  }
