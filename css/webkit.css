@@ -78,13 +78,14 @@
 }
 
 
-@media and (min-width: 867px) {
+@media only screen and (min-width: 867px) {
+
   .nav-logo {
-    color: #fff;
+    font-size: 2.8rem;
   }
 }
 
-@media screen and (min-width: 940px) {
+@media only screen and (min-width: 940px) {
   .navbar {
     width: 100%;
     top: 0;
@@ -106,11 +107,11 @@
     left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     top: 0;
     background-color: transparent;
-    width: 50%;
+    width: 40%;
   }
 
   .nav-item {
@@ -137,7 +138,7 @@
   }
 
   .btn-holder {
-    width: 25%;
+    width: 300px;
   }
 }
 
