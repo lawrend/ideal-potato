@@ -77,14 +77,14 @@
   color: var(--tertiary);
 }
 
-@media only screen and (min-width: 867px) {
+@media only screen and (min-width: 767px) {
 
   .nav-logo {
     font-size: 2.8rem;
   }
 }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 914px) {
   .navbar {
     width: 100%;
     top: 0;
@@ -140,6 +140,7 @@
 
   .btn-holder {
     width: 300px;
+    padding-top: 8px;
   }
 }
 

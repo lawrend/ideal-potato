@@ -130,8 +130,8 @@ html
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  background-image: linear-gradient(to bottom right, var(--primarydk), var(--primaryltop), var(--primarydk));
-  /* background-color: var(--primarydk); */
+  /* background-image: linear-gradient(to bottom right, var(--primaryltop), var(--primarydk)); */
+  background-color: var(--primarydkop);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -395,8 +395,11 @@ a {
   border-radius: 40px;
   border: none;
   transition: 0.3s;
-  padding: 0px;
+  /* padding-top: 8px; */
   justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 
 }
 
