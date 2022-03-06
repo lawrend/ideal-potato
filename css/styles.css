@@ -138,9 +138,6 @@ html
   padding: 1rem 1.5rem;
   z-index: 3;
 }
-
-
-
 .nav-menu {
   position: fixed;
   left: -100%;
@@ -260,9 +257,16 @@ a {
   text-decoration: none;
 }
 
+/* ABOUT PAGE */
+.aboutNav {
+  background-color: var(--primarydk);
+}
+
 
 .about-wrapper {
 }
+
+
 .approach-wrapper {
 }
 .services-wrapper {
@@ -548,7 +552,6 @@ img
   border: 2px solid #d3d3d3;
 }
 .about-pic {
-    visibility: hidden;
 }
 
 /* FOOTER */
