@@ -174,7 +174,7 @@ html
 }
 
 .nav-link:hover {
-  color: var(--offwhite);
+  color: var(--tertiary);
 }
 
 .nav-item {
@@ -403,9 +403,8 @@ a {
 .btn-holder:hover {
   border-color: var(--primarylt);
   background-color: var(--primarylt);
-  color: var(--secondary);
+  color: var(--offwhite);
 }
-
 
 /* ANIMATION - FADE IN ON LOAD */
 @keyframes fadeInAnimation {

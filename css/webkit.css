@@ -77,7 +77,6 @@
   color: var(--tertiary);
 }
 
-
 @media only screen and (min-width: 867px) {
 
   .nav-logo {
@@ -123,19 +122,21 @@
     color: var(--blktext);
   }
 
+  .nav-link:hover {
+    color: var(--offwhite);
+  }
+
   .nav-logo {
     font-size: 3.7rem;
     margin-right: 20px;
     margin-left: 20px;
   }
 
-  .brand {
-  }
-
   .nav-logo:hover
   {
     color: var(--offwhite);
   }
+
 
   .btn-holder {
     width: 300px;
