@@ -27,10 +27,13 @@
 :root {
   --offwhite:  #f6f1ee; 
   --primarylt: #fbdcce;
-  --primaryltop: #fbdcce40;
+  --primaryltop: #fbdcce70;
   --primaryltslightop: #fbdcce99;
+  --primaryltveryop: #fbdcce10;
   --primarydk: #efa885;
+  --primarydkop: #efa88570;
   --secondary: #5583a6;
+  --secondaryslightop: #5583a699;
   --tertiary:  #f6c270;
   --tertiaryop: #f6c27070;
   --blktext: #010101;
@@ -111,7 +114,8 @@ html
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  background-color: var(--primarydk);
+  background-image: linear-gradient(to bottom right, var(--primarydk), var(--primaryltop), var(--primarydk));
+  /* background-color: var(--primarydk); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +151,7 @@ html
 }
 
 .nav-link {
-  color: var(--primarydk);
+  color: var(--primarylt);
   text-decoration: none;
 }
 
@@ -221,6 +225,15 @@ h6
   font-size: 1.1rem;
 }
 
+/* INDEX WRAPPER */
+.index-wrapper {
+  overflow-y: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 /* BASIC CONTAINERS */
 
 .bg-basic {
@@ -233,7 +246,7 @@ h6
 }
 
 .bg-basic-sm {
-  /* overflow-y: auto; */
+  overflow-y: auto;
   /* background-position: center; */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
@@ -243,24 +256,39 @@ h6
 }
 
 .bg-basic-lg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: space-around;
   margin-top: 9vh;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   margin: auto;
   -webkit-perspective: 1px;
   perspective: 1px;
+  text-align: center;
 
 }
 
 
 .front-basic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
   color: var(--offwhite);
-  height: 70%;
+  height: 70vh;
+  text-align: center;
 }
+
+.index-jumbo {
+  font-size: 2.4rem;
+}
+
 
 .bg-parallax {
   overflow-y: auto;
@@ -317,19 +345,48 @@ h6
 /* BUTTON */
 
 .btn {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6em;
-  font-weight: bold;
+  /* font-family: 'Montserrat', sans-serif; */
   text-align: center;
   border-radius: 40px;
   /* border-width: 2px; */
   border: none;
-  height: 50px;
-  width: 180px;
   transition: 0.3s;
   padding: 0px;
-  text-transform: uppercase;
+  justify-content: center;
   /* border-color: inherit; */
+}
+
+.btn-holder {
+  border: solid 2px;
+  border-color: var(--secondary);
+  color: var(--tertiary);
+  background-image: linear-gradient(to bottom right, var(--secondary), var(--secondaryslightop), var(--secondary));
+  width: 60vw;
+  text-decoration: none;
+  font-size: 1.2em;
+  /* font-weight: bold; */
+  /* text-transform: uppercase; */
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s;
+  padding: 0px;
+  justify-content: center;
+
+}
+
+.btn-holder:hover {
+  border-color: var(--primarylt);
+  background-color: var(--primarylt);
+  color: var(--secondary);
+}
+
+
+.btn3  {
+  text-decoration: none;
+  font-size: .9em;
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 .header-btn {
@@ -361,18 +418,9 @@ h6
 }
 
 .btn3 {
-  border: solid 2px;
-  border-color: var(--secondary);
-  color: var(--offwhite);
-  background-color: var(--secondary);
-  width: 220px;
-}
+  }
 
-.btn3:hover {
-  border-color: var(--primarylt);
-  background-color: var(--primarylt);
-  color: var(--secondary);
-}
+
 
 /* ANIMATION - FADE IN ON LOAD */
 @keyframes fadeInAnimation {
@@ -521,11 +569,12 @@ img
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  font-size: .5em;
-  background-color: var(--primarylt);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10px;
+  font-size: .7em;
+  background-image: linear-gradient(var(--primaryltveryop), var(--primarylt));
+  /* background-color: var(--primarylt); */
   color: var(--secondary);
   width: 100%;
   bottom: 0;
