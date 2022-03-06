@@ -1,5 +1,143 @@
-*
-{
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/* FONT FAMILIES */
+@import url('https://fonts.googleapis.com/css2?family=Brawler&family=Poiret+One&family=Montserrat:wght@300&family=Mrs+Sheppards&family=Raleway:wght@300&display=swap');
+
+
+/* FONTS */
+.rale {
+  font-family: 'Raleway', sans-serif;
 }
+
+.mont {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.shepp {
+  font-family: 'Mrs Sheppards', cursive;
+}
+
+.brawler {
+  font-family: 'Brawler', serif;
+}
+
+.poi {
+  font-family: 'Poiret One', cursive;
+}
+
+/* COLORS */
+:root {
+  --offwhite:  #f6f1ee; 
+  --primarylt: #fbdcce;
+  --primaryltop: #fbdcce70;
+  --primaryltslightop: #fbdcce19;
+  --primaryltveryop: #fbdcce99;
+  --primarydk: #efa885;
+  --primarydkop: #efa88570;
+  --secondary: #5583a6;
+  --secondaryslightop: #5583a699;
+  --tertiary:  #f6c270;
+  --tertiaryop: #f6c27070;
+  --blktext: #010101;
+  --whttext: #fafafa;
+}
+
+.back-primarylt {
+  background-color: var(--primarylt);
+}
+.back-primarydk {
+  background-color: var(--primarydk);
+}
+.back-primaryltop {
+  background-color: var(--primaryltop);
+}
+.back-secondary {
+  background-color: var(--secondary);
+}
+
+.back-tertiary {
+  background-color: var(--tertiary);
+}
+
+.back-tertiaryop {
+  background-color: var(--tertiaryop);
+}
+
+.text-white {
+  color: var(--whttext);
+}
+
+.text-primarylt {
+  color: var(--primarylt);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-tertiary {
+  color: var(--tertiary);
+}
+
+
+@media and (min-width: 867px) {
+  .nav-logo {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .navbar {
+    width: 100%;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: transparent;
+    width: 50%;
+  }
+
+  .nav-item {
+    margin-left: 5rem;
+  }
+
+  .nav-link{
+    font-size: 1.9rem;
+    color: var(--blktext);
+  }
+
+  .nav-logo {
+    font-size: 3.7rem;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .brand {
+  }
+
+  .nav-logo:hover
+  {
+    color: var(--offwhite);
+  }
+
+  .btn-holder {
+    width: 25%;
+  }
+}
+
