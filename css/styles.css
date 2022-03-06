@@ -274,6 +274,12 @@ h6
 
 }
 
+.bg-basic-lg.active {
+  -webkit-filter: blur(1.5px);
+  filter: blur(1.5px);
+}
+
+
 
 .front-basic {
   display: flex;
