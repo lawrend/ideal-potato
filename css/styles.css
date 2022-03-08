@@ -130,7 +130,7 @@ html
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  /* background-image: linear-gradient(to bottom right, var(--primaryltop), var(--primarydk)); */
+  background-image: linear-gradient(to bottom right, var(--primaryltop), var(--primarydk));
   background-color: var(--primarydkop);
   display: flex;
   justify-content: space-between;
@@ -147,8 +147,8 @@ html
   width: 100%;
   text-align: left;
   transition: 0.3s;
-  box-shadow:
-  0 10px 27px rgba(0, 0, 0, 0.05);
+  /* box-shadow: */
+  /* 0 10px 27px rgba(0, 0, 0, 0.05); */
   height: 30%; 
   font-size: 2.1rem;
   padding-left: 20px;
@@ -247,6 +247,7 @@ h6
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  background-image: url('../assets/images/water_drop.jpg');
 }
 
 li {
@@ -259,13 +260,40 @@ a {
 
 /* ABOUT PAGE */
 .aboutNav {
-  background-color: var(--primarydk);
+  background-color: var(--primarydkop);
 }
 
+.about-pic {
+  width: 33vw;
+  height: auto;
+  min-height: 400px;
+  max-width: 250px;
+}
+
+.about-text {
+  width: 67vw;
+}
+
+.about-nav-menu {
+  /* background-color: none; */
+}
+
+#about-btn-holder {
+  font-size: 1.2rem;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  background-image: none;
+}
 
 .about-wrapper {
+  /* background-image: linear-gradient(var(--tertiary), var(--primarydk)); */
 }
 
+.about-header {
+  background-image: url('../assets/images/water_drop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .approach-wrapper {
 }
@@ -320,12 +348,10 @@ a {
 
 
 .front-basic {
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px;
   color: var(--offwhite);
-  height: 70vh;
   text-align: center;
 }
 
@@ -350,7 +376,32 @@ a {
 .front-reg {
 }
 
+/* FLEX CONTAINERS */
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .consult a {
@@ -399,7 +450,7 @@ a {
   border-radius: 40px;
   border: none;
   transition: 0.3s;
-  /* padding-top: 8px; */
+  padding: 8px;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -531,7 +582,6 @@ img
 {
   max-width: 100%;
   height: auto;
-
   border-style: none;
 }
 
@@ -551,8 +601,6 @@ img
 
   border: 2px solid #d3d3d3;
 }
-.about-pic {
-}
 
 /* FOOTER */
 .footer {
@@ -563,7 +611,7 @@ img
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: .7em;
-  background-image: linear-gradient(to bottom right, var(--primarydkop), var(--primarydk), var(--primarydkop));
+  background-image: linear-gradient(var(--primarydkop), var(--primarydk));
   /* background-color: var(--primarydkop); */
   color: var(--secondary);
   width: 100%;
