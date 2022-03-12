@@ -258,43 +258,6 @@ a {
   text-decoration: none;
 }
 
-/* ABOUT PAGE */
-.aboutNav {
-  background-color: var(--primarydkop);
-}
-
-.about-pic {
-  width: 33vw;
-  height: auto;
-  min-height: 400px;
-  max-width: 250px;
-}
-
-.about-text {
-  width: 67vw;
-}
-
-.about-nav-menu {
-  /* background-color: none; */
-}
-
-#about-btn-holder {
-  font-size: 1.2rem;
-  background-color: var(--tertiary);
-  color: var(--secondary);
-  background-image: none;
-}
-
-.about-wrapper {
-  /* background-image: linear-gradient(var(--tertiary), var(--primarydk)); */
-}
-
-.about-header {
-  background-image: url('../assets/images/water_drop.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .approach-wrapper {
 }
 .services-wrapper {
@@ -400,7 +363,7 @@ a {
   height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
 }
 
@@ -424,6 +387,8 @@ a {
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 .card:hover
@@ -437,12 +402,51 @@ a {
   padding: 2px 16px;
 }
 
+/* CARD ANIMATION AND FADE ON SCROLL INTO VIEW */
+
+.rightie {
+  margin-right: -20px;
+  /* margin-bottom: -20px; */
+  margin-top: -20px;
+  opacity: 0.4;
+  transition: all 2s;
+}
+
+.in-view.rightie {
+  margin-right: 0px;
+  margin-top: 0px;
+  opacity: 1;
+}
+
+.leftie {
+  margin-bottom: -20px;
+  margin-left: -20px;
+  opacity: 1;
+  transition: all 2s;
+}
+
+.in-view.leftie{
+  margin-bottom: 0px;
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.middle {
+  opacity: 0.4;
+  transition: all 2s;
+}
+
+.in-view.middle {
+  opacity: 1;
+}
+
 /* BUTTON */
 .btn-holder {
   border: solid 2px;
   border-color: var(--secondary);
   color: var(--tertiary);
-  background-image: linear-gradient(to bottom right, var(--secondary), var(--secondaryslightop), var(--secondary));
+  background-color: var(--secondary);
+  /* background-image: linear-gradient(to bottom right, var(--secondary), var(--secondaryslightop), var(--secondary)); */
   width: 250px;
   height: 10vh;
   text-decoration: none;
@@ -455,13 +459,21 @@ a {
   align-items: center;
   align-content: center;
   text-align: center;
-
 }
 
 .btn-holder:hover {
   border-color: var(--primarylt);
   background-color: var(--primarylt);
   color: var(--offwhite);
+}
+
+.btn-4 {
+  
+
+}
+
+.btn-4 a{
+  color: var(--tertiary);
 }
 
 /* ANIMATION - FADE IN ON LOAD */

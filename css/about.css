@@ -1,0 +1,86 @@
+/* ABOUT PAGE */
+.aboutNav {
+  background-color: var(--primarydkop);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container p {
+  font-size: 2.0rem;
+}
+
+.about-pic {
+  width: inherit;
+  height: auto;
+  min-height: 200px;
+  margin: 15px;
+}
+
+.about-text-1 {
+  background-color: var(--offwhite);
+  padding: 15px;
+  height: 40vh;
+}
+.about-text-2 {
+  padding: 15px;
+  background-color: var(--primarylt);
+  height: 40vh;
+}
+.about-text-3 {
+  padding: 15px;
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  height: 20vh;
+}
+.about-text-4 {
+  padding: 15px;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  height: 30vh;
+}
+
+.about-nav-menu {
+  /* background-color: none; */
+}
+
+#about-btn-holder {
+  font-size: 1.2rem;
+  background-color: var(--secondary);
+  color: var(--primarylt);
+  background-image: none;
+}
+
+.about-wrapper {
+  /* background-image: linear-gradient(var(--tertiary), var(--primarydk)); */
+}
+
+.about-header {
+  background-image: url('../assets/images/water_drop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-column-pic {
+  width: 50%;
+  float: left;
+}
+
+.about-column-text {
+  width: 75%;
+  float: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-main-wrapper {
+  /* display: flex; */
+  /* direction: column; */
+}
+

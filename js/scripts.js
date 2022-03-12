@@ -1,3 +1,4 @@
+// TOPNAV
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const bgBasic = document.querySelector(".bg-basic-lg");
@@ -23,9 +24,9 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 // function defines cards for animation; setTimeout is here so the component has a chance to load first
 
 let cards;
-setTimeout(()=> {cards = document.querySelectorAll(".card");}, 100);
+setTimeout(()=> {cards = document.querySelectorAll(".card");console.log(cards)}, 210);
 // uncomment to check what's getting grabbed
-// console.log(cards)
+
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
@@ -53,6 +54,12 @@ function callbackFunc() {
 
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
+
+
+
+
+
+
 
 
 // adding and removing responsive elements from topnav
