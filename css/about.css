@@ -1,6 +1,7 @@
 /* ABOUT PAGE */
 .aboutNav {
-  background-color: var(--primarydkop);
+  background-color: transparent;
+  position: relative;
 }
 
 .about-container {
@@ -15,25 +16,27 @@
 .about-pic {
   width: inherit;
   height: auto;
-  min-height: 200px;
-  margin: 15px;
+  margin: 35px;
+}
+.about-pic img {
+  max-height: 400px
 }
 
 .about-text-1 {
   background-color: var(--offwhite);
   padding: 15px;
-  height: 40vh;
+  height: auto;
 }
 .about-text-2 {
   padding: 15px;
   background-color: var(--primarylt);
-  height: 40vh;
+  height: auto;
 }
 .about-text-3 {
   padding: 15px;
   background-color: var(--secondary);
   color: var(--tertiary);
-  height: 20vh;
+  height: auto;
 }
 .about-text-4 {
   padding: 15px;
@@ -43,24 +46,24 @@
 }
 
 .about-nav-menu {
-  /* background-color: none; */
 }
 
 #about-btn-holder {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   background-color: var(--secondary);
   color: var(--primarylt);
   background-image: none;
 }
 
 .about-wrapper {
-  /* background-image: linear-gradient(var(--tertiary), var(--primarydk)); */
 }
 
 .about-header {
   background-image: url('../assets/images/water_drop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  top: 0;
+  padding: 0px;
 }
 
 .about-column-pic {
@@ -80,7 +83,5 @@
 }
 
 .about-main-wrapper {
-  /* display: flex; */
-  /* direction: column; */
 }
 

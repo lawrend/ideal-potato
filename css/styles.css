@@ -130,7 +130,7 @@ html
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  background-image: linear-gradient(to bottom right, var(--primaryltop), var(--primarydk));
+  /* background-image: linear-gradient(to bottom right, var(--primaryltop), var(--primarydk)); */
   background-color: var(--primarydkop);
   display: flex;
   justify-content: space-between;
