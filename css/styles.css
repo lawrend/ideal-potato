@@ -125,19 +125,24 @@ html
 /* HEADER/NAV */
 
 .navbar {
-  height: 9vh;
+  background-color: transparent;
+  position: relative;
+  height: auto;
+  padding-left: 10px;
+  padding-top: 0px;
   width: 100%;
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
   /* background-image: linear-gradient(to bottom right, var(--primaryltop), var(--primarydk)); */
-  background-color: var(--primarydkop);
+  /* background-color: var(--primarydkop); */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  /* padding: 1rem 1.5rem; */
   z-index: 3;
 }
+
 .nav-menu {
   position: fixed;
   left: -100%;
@@ -263,6 +268,7 @@ a {
 .services-wrapper {
 }
 
+
 /* BASIC CONTAINERS */
 
 .bg-basic {
@@ -336,8 +342,50 @@ a {
 
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container p {
+  font-size: 2.0rem;
+}
+
+
+
 .front-reg {
 }
+
+/* TEXT BOXES */
+.text-1 {
+  background-color: var(--whttext);
+  padding: 40px;
+  height: auto;
+}
+
+.text-2 {
+  padding: 40px;
+  background-color: var(--primarylt);
+  height: auto;
+}
+.text-3 {
+  padding: 40px;
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  height: auto;
+}
+.text-4 {
+  padding: 40px;
+  background-color: var(--primarylt);
+  color: var(--secondary);
+  height: auto;
+}
+.text-4-text {
+  /* needed to separate the button from text */
+  min-height: 250px;
+}
+
+
 
 /* FLEX CONTAINERS */
 .flex-around {
@@ -358,20 +406,35 @@ a {
   flex-direction: column;
 }
 
+/* HEADER */
 .header {
+  background-image: url('../assets/images/water_drop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  padding: 10px;
+  height: 50vh;
   width: 100%;
-  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 15px;
+  justify-content: space-between;
 }
+
+.header-text-holder {
+  height: 75%;
+}
+
+.header-text {
+}
+
+
+
 
 .consult a {
   text-decoration: none;
   color: var(--offwhite);
-}
 
+}
 .consult a:hover {
   color: var(--tertiary);
 }
@@ -407,7 +470,7 @@ a {
 .movable {
 }
 .right-side {
-  margin-right: -20px;
+  margin-right: -40px;
   opacity: .5;
   transition: all 2s;
 }
@@ -416,7 +479,7 @@ a {
   opacity: 1;
 }
 .left-side {
-  margin-left: -20px;
+  margin-left: -40px;
   opacity: .5;
   transition: all 2s;
 }
@@ -463,11 +526,6 @@ a {
 
 /* BUTTON */
 .btn-holder {
-  border: solid 2px;
-  border-color: var(--secondary);
-  color: var(--tertiary);
-  background-color: var(--secondary);
-  /* background-image: linear-gradient(to bottom right, var(--secondary), var(--secondaryslightop), var(--secondary)); */
   width: 250px;
   height: 10vh;
   text-decoration: none;
@@ -488,9 +546,44 @@ a {
   color: var(--offwhite);
 }
 
-.btn-4 {
-  
+.btn-holder-2 {
+  border: solid 2px;
+  border-color: var(--secondary);
+  background-color: var(--offwhite);
+  color: var(--secondary);
+}
 
+.btn-holder-2:hover {
+  background-color: var(--secondary);
+  color: var(--offwhite);
+}
+
+.header-btn-holder {
+  /* font-size: 1.8rem; */
+  background-color: var(--primaryltop);
+  color: var(--offwhite);
+  border: solid 2px;
+  background-image: none;
+  border: solid 2px;
+  border-color: var(--offwhite);
+  width: 250px;
+  height: 10vh;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: 0.3s;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.header-btn-holder:hover {
+  /* border-color: var(--primarylt); */
+  background-color: var(--offwhite);
+  color: var(--primarydk);
+}
+
+.btn-4 {
 }
 
 .btn-4 a{
@@ -542,6 +635,12 @@ a {
 }
 
 /* UTILITIES */
+
+.line {
+  width: 60%;
+  color: var(--primarydk);
+}
+
 ._full-width
 {
   width: 100%;
@@ -611,6 +710,21 @@ a {
 }
 
 /* IMAGES */
+
+.pic {
+  margin: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.pic img {
+  max-height: 400px;
+  width: auto;
+}
+
+
+
+
 img
 {
   max-width: 100%;
