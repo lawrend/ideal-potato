@@ -404,6 +404,18 @@ a {
 
 /* CARD ANIMATION AND FADE ON SCROLL INTO VIEW */
 
+.movable {
+}
+.right-side {
+  margin-right: -20px;
+  opacity: .5;
+  transition: all 2s;
+}
+.in-view.right-side {
+  margin-right: 0px;
+  opacity: 1;
+}
+
 .rightie {
   margin-right: -20px;
   /* margin-bottom: -20px; */

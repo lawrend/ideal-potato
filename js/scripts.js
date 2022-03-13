@@ -23,9 +23,12 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 // function defines cards for animation; setTimeout is here so the component has a chance to load first
 
-let cards;
-setTimeout(()=> {cards = document.querySelectorAll(".card");console.log(cards)}, 210);
+// let cards;
+// setTimeout(()=> {cards = document.querySelectorAll(".card");console.log(cards)}, 210);
 // uncomment to check what's getting grabbed
+
+let movers = document.querySelectorAll(".movable")
+// setTimeout(()=> {movers = document.querySelectorAll(".movable");console.log(movers)}, 210);
 
 
 function isElementInViewport(el) {
@@ -39,10 +42,11 @@ function isElementInViewport(el) {
 }
 
 function callbackFunc() {
-  for (var i = 0; i < cards.length; i++) {
-    if (isElementInViewport(cards[i])) {
-      if(!cards[i].classList.contains("in-view")){
-        cards[i].classList.add("in-view");
+  for (var i = 0; i < movers.length; i++) {
+    if (isElementInViewport(movers[i])) {
+      console.log(movers[i])
+      if(!movers[i].classList.contains("in-view")){
+        movers[i].classList.add("in-view");
       }
     }
     // commented out below so animations fire only on first view

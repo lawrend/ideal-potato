@@ -14,37 +14,48 @@
 }
 
 .about-pic {
-  width: inherit;
-  height: auto;
   margin: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .about-pic img {
-  max-height: 400px
+  max-height: 400px;
+  width: auto;
 }
 
 .about-text-1 {
-  background-color: var(--offwhite);
-  padding: 15px;
+  background-color: var(--whttext);
+  padding: 40px;
   height: auto;
 }
+
 .about-text-2 {
-  padding: 15px;
+  padding: 40px;
   background-color: var(--primarylt);
   height: auto;
 }
 .about-text-3 {
-  padding: 15px;
+  padding: 40px;
   background-color: var(--secondary);
   color: var(--tertiary);
   height: auto;
 }
 .about-text-4 {
-  padding: 15px;
+  padding: 40px;
   background-color: var(--tertiary);
   color: var(--secondary);
-  height: 30vh;
+  height: auto;
+}
+.about-text-4-text {
+  /* needed to separate the button from text */
+  min-height: 250px;
 }
 
+.about-line {
+  width: 60%;
+  color: var(--primarydk);
+}
 .about-nav-menu {
 }
 
@@ -64,6 +75,7 @@
   background-size: cover;
   top: 0;
   padding: 0px;
+  height: 50vh;
 }
 
 .about-column-pic {
