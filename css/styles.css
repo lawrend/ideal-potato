@@ -357,6 +357,11 @@ a {
 }
 
 /* TEXT BOXES */
+
+.text-box-header {
+  font-size: 3.8rem;
+  font-family: 'Raleway', sans-serif;
+}
 .text-1 {
   background-color: var(--whttext);
   padding: 40px;
@@ -383,6 +388,104 @@ a {
 .text-4-text {
   /* needed to separate the button from text */
   min-height: 250px;
+}
+
+
+
+/* TEXT BOX WITH CARDS */
+.text-box-with-cards {
+  padding: 40px;
+  height: auto;
+  align-items: center;
+  background-color: var(--offwhite);
+}
+
+.card {
+  font-size: 3.8rem;
+  height: 250px;
+  width: 250px;
+  /* -webkit-transition: .3s; */
+  /* -o-transition: .3s; */
+  border-radius: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  margin: 30px;
+  background-color: var(--primarylt);
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.card .-content {
+  padding: 16px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.card-header {
+  margin: 20px;
+  font-size: 4.2rem;
+}
+
+.card-footer {
+  margin: 20px;
+}
+
+.top-left {
+  margin-left: -90px;
+  opacity: .5;
+  transition: all 1s;
+}
+
+.in-view.top-left {
+  margin: 0px;
+  opacity: 1;
+}
+
+.mid-mid {
+  opacity: .5;
+  transition: all 1s;
+}
+
+.in-view.mid-mid {
+  opacity: 1;
+}
+
+.bottom-right {
+  margin-right: -90px;
+  opacity: .5;
+  transition: all 1s;
+}
+
+.bottom-right.in-view {
+  margin: 0px;
+  opacity: 1;
+}
+
+.movable {
+  /* use this class to designate what will move upon view/load */
+
+}
+
+.right-side {
+  margin-right: -40px;
+  opacity: .5;
+  transition: all 2s;
+}
+.in-view.right-side {
+  margin-right: 0px;
+  opacity: 1;
+}
+.left-side {
+  margin-left: -40px;
+  opacity: .5;
+  transition: all 2s;
+}
+.in-view.left-side {
+  opacity: 1;
+  margin-left: 0px;
 }
 
 
@@ -430,99 +533,6 @@ a {
 
 
 
-.consult a {
-  text-decoration: none;
-  color: var(--offwhite);
-
-}
-.consult a:hover {
-  color: var(--tertiary);
-}
-
-/* CARD */
-
-.card
-{
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-
-  border-radius: 5px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.card:hover
-{
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-}
-
-.card .-content
-{
-  padding: 2px 16px;
-}
-
-/* CARD ANIMATION AND FADE ON SCROLL INTO VIEW */
-
-.movable {
-}
-.right-side {
-  margin-right: -40px;
-  opacity: .5;
-  transition: all 2s;
-}
-.in-view.right-side {
-  margin-right: 0px;
-  opacity: 1;
-}
-.left-side {
-  margin-left: -40px;
-  opacity: .5;
-  transition: all 2s;
-}
-.in-view.left-side {
-  opacity: 1;
-  margin-left: 0px;
-}
-
-.rightie {
-  margin-right: -20px;
-  /* margin-bottom: -20px; */
-  margin-top: -20px;
-  opacity: 0.4;
-  transition: all 2s;
-}
-
-.in-view.rightie {
-  margin-right: 0px;
-  margin-top: 0px;
-  opacity: 1;
-}
-
-.leftie {
-  margin-bottom: -20px;
-  margin-left: -20px;
-  opacity: 1;
-  transition: all 2s;
-}
-
-.in-view.leftie{
-  margin-bottom: 0px;
-  margin-left: 0px;
-  opacity: 1;
-}
-
-.middle {
-  opacity: 0.4;
-  transition: all 2s;
-}
-
-.in-view.middle {
-  opacity: 1;
-}
 
 /* BUTTON */
 .btn-holder {
@@ -581,6 +591,19 @@ a {
   /* border-color: var(--primarylt); */
   background-color: var(--offwhite);
   color: var(--primarydk);
+}
+
+.card-btn-holder {
+  background-color: var(--secondary);
+  color: var(--offwhite);
+ width: 250px;
+  height: 10vh;
+  text-decoration: none;
+  font-size: 2.2rem;
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s;
+  padding: 8px;
 }
 
 .btn-4 {

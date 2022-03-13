@@ -21,12 +21,6 @@ function closeMenu() {
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-// function defines cards for animation; setTimeout is here so the component has a chance to load first
-
-// let cards;
-// setTimeout(()=> {cards = document.querySelectorAll(".card");console.log(cards)}, 210);
-// uncomment to check what's getting grabbed
-
 let movers = document.querySelectorAll(".movable")
 // setTimeout(()=> {movers = document.querySelectorAll(".movable");console.log(movers)}, 210);
 
@@ -59,30 +53,4 @@ function callbackFunc() {
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
-
-
-
-
-
-
-
-// adding and removing responsive elements from topnav
-// function topnav(y) {
-//     var x = document.getElementById(y);
-//     if (!x.classList.contains('responsive')) {
-//         x.className += " responsive";
-//     } else {
-//         x.className = x.className.replace("responsive", "");
-//     }
-// }
-
-// adding and removing responsive elements from topnav
-// function addRemoveResponsive(y) {
-//     var x = document.getElementById(y);
-//     if (!x.classList.contains('responsive')) {
-//         x.className += " responsive";
-//     } else {
-//         x.className = x.className.replace("responsive", "");
-//     }
-// }
 
