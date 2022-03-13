@@ -60,10 +60,23 @@
 }
 
 #about-btn-holder {
-  font-size: 1.6rem;
-  background-color: var(--secondary);
-  color: var(--primarylt);
+  font-size: 1.8rem;
+  background-color: var(--primarylt);
+  color: var(--secondary);
+  border: solid 2px;
+  border-color: var(--secondary);
   background-image: none;
+}
+
+#about-btn-holder-2 {
+  font-size: 1.8rem;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  border: solid 2px;
+  border-color: var(--secondary);
+}
+
+.about-front-basic {
 }
 
 .about-wrapper {

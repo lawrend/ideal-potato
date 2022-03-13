@@ -415,6 +415,15 @@ a {
   margin-right: 0px;
   opacity: 1;
 }
+.left-side {
+  margin-left: -20px;
+  opacity: .5;
+  transition: all 2s;
+}
+.in-view.left-side {
+  opacity: 1;
+  margin-left: 0px;
+}
 
 .rightie {
   margin-right: -20px;
