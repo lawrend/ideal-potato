@@ -390,6 +390,18 @@ a {
   min-height: 250px;
 }
 
+.text-5 {
+  background-image: url('../assets/svg/Gradient/Characters/woman presenting.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-color: var(--whttext); */
+  padding: 40px;
+  height: auto;
+}
+
+
+
 
 
 /* TEXT BOX WITH CARDS */
@@ -431,6 +443,10 @@ a {
 
 .card-footer {
   margin: 20px;
+}
+
+.card-line {
+  margin-bottom: 20px;
 }
 
 .top-left {
@@ -594,9 +610,9 @@ a {
 }
 
 .card-btn-holder {
-  background-color: var(--secondary);
+  background-color: var(--primarydk);
   color: var(--offwhite);
- width: 250px;
+  width: 250px;
   height: 10vh;
   text-decoration: none;
   font-size: 2.2rem;
