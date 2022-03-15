@@ -86,12 +86,6 @@
   }
 }
 
-@media only screen and (max-height: 700px) {
-  .nav-menu {
-    height: 35vh;
-  }
-}
-
 @media only screen and (min-width: 525px) {
   #about-btn-holder {
     font-size: 1.6rem; 
