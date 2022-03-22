@@ -100,6 +100,15 @@
   #about-header-text h3{
     font-size: 3.8rem;
   }
+
+  .card {
+    width: 350px;
+    margin: 50px;
+  }
+
+  .card-line {
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (min-width: 914px) {
