@@ -32,12 +32,17 @@
   --primaryltveryop: #fbdcce10;
   --primarydk: #efa885;
   --primarydkop: #efa88570;
-  --secondary: #5583a6;
+  --secondarydk: #5583a6;
+  /* --secondary: #a4d2ec ; */
+  --secondary: #4B6BA6;
+  --secondaryalt: #A4D2EC;
   --secondaryslightop: #5583a699;
   --tertiary:  #f6c270;
   --tertiaryop: #f6c27070;
   --blktext: #010101;
   --whttext: #fafafa;
+  --greenlt: #B7D8C7;
+  --flowerpink: #E5C6E5;
 }
 
 .back-primarylt {
@@ -103,7 +108,7 @@ body
   margin: 0;
 
   color: var(--blktext);
-  background-color: var(--offwhite);
+  background-color: var(--whttext);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -119,6 +124,10 @@ html
   -webkit-text-size-adjust: 100%;
   /*This will set all REM to 10px, so that 1.8rem=18px*/
   height: 100%;
+}
+
+p {
+  font-size: 2.5rem; 
 }
 
 /* NAVBAR BE HERE */
@@ -320,7 +329,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 8px;
-  color: var(--offwhite);
+  color: var(--secondary);
   text-align: center;
 }
 
@@ -368,22 +377,39 @@ a {
   height: auto;
 }
 
+.text-1 p {
+  font-size: 2.5rem;
+}
+
 .text-2 {
   padding: 40px;
-  background-color: var(--primarylt);
+  background-color: var(--greenlt);
+  color: var(--secondary);
   height: auto;
 }
+
+.text-2 p {
+  font-size: 2.5rem;
+}
+
+
 .text-3 {
   padding: 40px;
-  background-color: var(--secondary);
-  color: var(--tertiary);
+  background-color: var(--flowerpink);
+  color: var(--secondary);
   height: auto;
+}
+.text-3 p {
+  font-size: 2.5rem;
 }
 .text-4 {
   padding: 40px;
-  background-color: var(--primarylt);
-  color: var(--secondary);
+  background-color: var(--secondaryalt);
+  color: var(--whttext);
   height: auto;
+}
+.text-4 p {
+  font-size: 2.5rem;
 }
 .text-4-text {
   /* needed to separate the button from text */
@@ -525,9 +551,19 @@ a {
   flex-direction: column;
 }
 
+.flex-column-switchable {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-reverser-switchable {
+  display: flex;
+  flex-direction: column;
+}
+
 /* HEADER */
 .header {
-  background-image: url('../assets/images/water_drop.jpg');
+  background-image: url('../assets/images/pink-lotus.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -575,20 +611,20 @@ a {
 
 .btn-holder-2 {
   border: solid 2px;
-  border-color: var(--secondary);
+  border-color: var(--secondarydk);
   background-color: var(--offwhite);
-  color: var(--secondary);
+  color: var(--secondarydk);
 }
 
 .btn-holder-2:hover {
-  background-color: var(--secondary);
+  background-color: var(--secondarydk);
   color: var(--offwhite);
 }
 
 .header-btn-holder {
   /* font-size: 1.8rem; */
-  background-color: var(--primaryltop);
-  color: var(--offwhite);
+  background-color: var(--offwhite);
+  color: var(--secondary);
   border: solid 2px;
   background-image: none;
   border: solid 2px;
@@ -606,8 +642,9 @@ a {
 }
 .header-btn-holder:hover {
   /* border-color: var(--primarylt); */
-  background-color: var(--offwhite);
-  color: var(--primarydk);
+  background-color: var(--secondary);
+  /* color: var(--primarydk); */
+  color: var(--offwhite);
 }
 
 .card-btn-holder {
@@ -678,7 +715,7 @@ a {
 
 .line {
   width: 60%;
-  color: var(--primarydk);
+  color: var(--secondary);
 }
 
 ._full-width
@@ -759,6 +796,7 @@ a {
 }
 .pic img {
   max-height: 400px;
+  min-width: 250px;
   width: auto;
 }
 

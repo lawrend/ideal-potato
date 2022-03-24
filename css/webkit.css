@@ -27,17 +27,21 @@
 :root {
   --offwhite:  #f6f1ee; 
   --primarylt: #fbdcce;
+  /* --primarylt: #e4dee4; */
   --primaryltop: #fbdcce70;
   --primaryltslightop: #fbdcce19;
   --primaryltveryop: #fbdcce99;
   --primarydk: #efa885;
   --primarydkop: #efa88570;
-  --secondary: #5583a6;
+  --secondarydk: #5583a6;
+  /* --secondary: #A4D2EC; */
+  --secondary: #4B6BA6;
   --secondaryslightop: #5583a699;
   --tertiary:  #f6c270;
   --tertiaryop: #f6c27070;
   --blktext: #010101;
   --whttext: #fafafa;
+  --greenlt: #B7D8C7;
 }
 
 .back-primarylt {
@@ -109,7 +113,34 @@
   .card-line {
     margin-bottom: 40px;
   }
+
+  .flex-column-switchable {
+    flex-direction: row;
+    background-color: var(--whttext);
+    margin-bottom: 10px;
+  }
+
+  .flex-reverser-switchable {
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+  }
+
+  .pic {
+    margin: 0px 10px; 0px 10px;
+  }
+
+  #about-headshot {
+    margin-top: 30px;
+  }
+
+  #field-flowers {
+    /* margin: 0px 10px; 0px 10px; */
+    width: 33vw;
+  }
+
+
 }
+
 
 @media only screen and (min-width: 914px) {
   .navbar {
