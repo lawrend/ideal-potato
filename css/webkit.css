@@ -105,6 +105,10 @@
     font-size: 3.8rem;
   }
 
+  .header {
+    height: 50vh;
+  }
+
   .card {
     width: 350px;
     margin: 50px;
