@@ -82,18 +82,24 @@
 }
 
 @media only screen and (max-width: 390px) {
-  .about-header .front-basic h3 {
-    font-size: 2.4rem;
-  }
   .about-btn-holder {
     margin-top: 20px;
   }
+  .front-basic h2 {
+    /* font-size: 3.2rem; */
+  }
+
 }
 
 @media only screen and (min-width: 525px) {
   #about-btn-holder {
     font-size: 1.6rem; 
   }
+
+  .front-basic h2 {
+    font-size: 4.5rem;
+  }
+
 }
 
 @media only screen and (min-width: 767px) {
@@ -107,6 +113,10 @@
 
   .header {
     height: 50vh;
+  }
+
+  .front-basic h2 {
+    font-size: 5.5rem;
   }
 
   .card {
