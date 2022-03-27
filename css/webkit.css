@@ -143,14 +143,15 @@
     margin: 0px 10px; 0px 10px;
   }
 
-  #about-headshot {
-    margin-top: 30px;
-  }
-
   #field-flowers {
     /* margin: 0px 10px; 0px 10px; */
     width: 33vw;
   }
+
+  .headshot {
+    padding: 20px;
+  }
+
 
 
 }

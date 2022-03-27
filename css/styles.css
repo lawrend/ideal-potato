@@ -33,7 +33,7 @@
   --primarydk: #efa885;
   --primarydkop: #efa88570;
   --secondarydk: #5583a6;
-  /* --secondary: #a4d2ec ; */
+  --secondaryaltop: #4B6BA680;
   --secondary: #4B6BA6;
   --secondaryalt: #A4D2EC;
   --secondaryslightop: #5583a699;
@@ -43,6 +43,9 @@
   --whttext: #fafafa;
   --greenlt: #B7D8C7;
   --flowerpink: #E5C6E5;
+  --topflowerpinkop: #7F9BB180;
+  --topflowerop: #E78CA599;
+  --flowerpinkop: #E5C6E570;
 }
 
 .back-primarylt {
@@ -138,8 +141,9 @@ p {
   background-color: transparent;
   position: relative;
   height: auto;
-  padding-left: 10px;
-  padding-top: 0px;
+  /* padding-left: 10px; */
+  /* padding-top: 0px; */
+  padding: 10px;
   width: 100%;
   top: 0;
   /* position: -webkit-sticky; */
@@ -574,7 +578,7 @@ a {
   background-size: cover;
   background-position: center;
   top: 0;
-  padding: 10px;
+  /* padding: 10px; */
   height: 30vh;
   width: 100%;
   display: flex;
@@ -586,6 +590,21 @@ a {
   height: 75%;
 }
 
+.header-text-bubble {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  font-size: 2.2rem;
+  /* border-radius: 40px; */
+  /* border: 4px; */
+  transition: 0.3s;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: var(--secondaryaltop);
+}
 .header-text {
 }
 
@@ -629,7 +648,7 @@ a {
 
 .header-btn-holder {
   /* font-size: 1.8rem; */
-  background-color: var(--secondary);
+  background-color: var(--topflowerop);
   /* color: var(--primarydk); */
   color: var(--offwhite);
 
@@ -811,6 +830,7 @@ a {
   min-width: 250px;
   width: auto;
 }
+
 
 
 
