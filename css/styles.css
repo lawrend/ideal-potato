@@ -427,11 +427,11 @@ a {
 }
 
 .text-5 {
-  background-image: url('../assets/svg/Gradient/Characters/woman presenting.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url('../assets/svg/Gradient/Characters/woman presenting.svg'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 
-  /* background-color: var(--whttext); */
+  background-color: var(--flowerpinkop);
   padding: 40px;
   height: auto;
 }
