@@ -100,6 +100,10 @@
     font-size: 4.5rem;
   }
 
+  .text-box-buffer {
+    margin-top: 10vh;
+  }
+
 }
 
 @media only screen and (min-width: 767px) {
@@ -130,8 +134,12 @@
 
   .flex-column-switchable {
     flex-direction: row;
-    background-color: var(--whttext);
+    /* background-color: var(--whttext); */
     margin-bottom: 10px;
+  }
+
+  .flex-row-switchable {
+    flex-direction: column;
   }
 
   .flex-reverser-switchable {
@@ -143,18 +151,21 @@
     margin: 0px 10px; 0px 10px;
   }
 
+  .floating-circle-pic {
+    margin-top: -15vh;
+    margin-left: -5vw;
+    z-index: 2;
+  }
+
   #field-flowers {
     /* margin: 0px 10px; 0px 10px; */
     width: 33vw;
   }
 
   .headshot {
-    padding: 20px;
-    padding-top: 70px;
+    /* padding: 20px; */
+    /* padding-top: 50px; */
   }
-
-
-
 }
 
 

@@ -377,9 +377,7 @@ a {
   font-family: 'Raleway', sans-serif;
 }
 .text-1 {
-  /* padding: 3vh 15vw 3vh 15vw; */
   background-color: var(--whttext);
-  /* padding: 40px; */
   height: auto;
 }
 
@@ -392,6 +390,7 @@ a {
   background-color: var(--greenlt);
   color: var(--secondary);
   height: auto;
+  margin: 0 3vw 0 3vw;
 }
 
 .text-2 p {
@@ -400,16 +399,17 @@ a {
 
 
 .text-3 {
-  /* padding: 40px; */
   padding: 3vh 15vw 3vh 15vw;
   background-color: var(--flowerpink);
   color: var(--secondary);
   height: auto;
+  margin: 0 3vw 0 3vw;
 }
 .text-3 p {
   font-size: 2.5rem;
 }
 .text-4 {
+  margin: 0 3vw 0 3vw;
   padding: 3vh 15vw 3vh 15vw;
   /* padding: 40px; */
   background-color: var(--secondaryalt);
@@ -428,9 +428,9 @@ a {
   /* background-image: url('../assets/svg/Gradient/Characters/woman presenting.svg'); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
-
+  margin: 0 3vw 0 3vw;
+  padding: 3vh 15vw 3vh 15vw;
   background-color: var(--flowerpinkop);
-  padding: 40px;
   height: auto;
 }
 
@@ -439,7 +439,7 @@ a {
   padding: 40px;
   height: auto;
   align-items: center;
-  background-color: var(--offwhite);
+  /* background-color: var(--offwhite); */
 }
 
 .card {
@@ -543,6 +543,10 @@ a {
   justify-content: space-between;
 }
 
+.flex-end {
+  justify-content: end;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -559,6 +563,11 @@ a {
   flex-direction: column;
 }
 
+.flex-row-switchable {
+  display: flex;
+  flex-direction: row;
+}
+
 .flex-reverser-switchable {
   display: flex;
   flex-direction: column;
@@ -572,7 +581,7 @@ a {
   background-position: center;
   top: 0;
   /* padding: 10px; */
-  height: 30vh;
+  height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -820,11 +829,31 @@ a {
   width: auto;
 }
 
+.floating-circle-pic {
+  /* margin-top: -15vh; */
+  /* margin-left: -5vw; */
+  /* z-index: 2; */
+  /* height: 30vh; */
+  /* width: 30vw; */
+}
+
+.floating-circle-pic img {
+  /* margin-top: -50px; */
+  /* margin-left: -60px; */
+  height: 30vh;
+  width: 30vh;
+}
+
 img
 {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   border-style: none;
+}
+
+.headshot {
+  height: auto;
+  width: 30vh;
 }
 
 .-circle
