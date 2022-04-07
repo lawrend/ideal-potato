@@ -823,11 +823,11 @@ a {
   flex-direction: row;
   justify-content: space-around;
 }
-.pic img {
-  max-height: 400px;
-  min-width: 250px;
-  width: auto;
-}
+/* .pic img { */
+/*   max-height: 400px; */
+/*   min-width: 250px; */
+/*   width: auto; */
+/* } */
 
 .floating-circle-pic {
   /* margin-top: -15vh; */
@@ -851,9 +851,18 @@ img
   border-style: none;
 }
 
-.headshot {
-  height: auto;
-  width: 30vh;
+/* .headshot { */
+/*   background-image: url('../assets/images/SabaHeadshot2022.jpeg'); */ 
+/*   background-repeat: none; */
+/*   background-size: fill; */
+/*   background-position: fixed; */
+/*   height: 30vw; */
+/*   width: 60vw; */
+/* } */
+
+.headshot img {
+  height: 40vh;
+  /* width: 30vw; */
 }
 
 .-circle
