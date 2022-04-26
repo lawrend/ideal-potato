@@ -42,6 +42,7 @@
   --blktext: #010101;
   --whttext: #fafafa;
   --greenlt: #B7D8C7;
+  --greendk: #235123;
   --flowerpink: #E5C6E5;
   --topflowerpinkop: #7F9BB180;
   --topflowerop: #E78CA599;
@@ -372,6 +373,13 @@ a {
 
 /* TEXT BOXES */
 
+.text-box-buffer {
+  background-image: url('../assets/SVG/flowerpinkbg.png');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 .text-box-header {
   font-size: 3.8rem;
   font-family: 'Raleway', sans-serif;
@@ -390,7 +398,7 @@ a {
   background-color: var(--greenlt);
   color: var(--secondary);
   height: auto;
-  margin: 0 3vw 0 3vw;
+  /* margin: 0 3vw 0 3vw; */
 }
 
 .text-2 p {
@@ -434,15 +442,33 @@ a {
   height: auto;
 }
 
+.text-approach {
+  background-image: url('../assets/SVG/flowerpinkbg.png');
+  background-repeat: no-repeat; 
+  /* background-size: cover; */
+  background-position: center;
+  position: relative;
+  height: 50vh;
+}
+
 /* TEXT BOX WITH CARDS */
 .text-box-with-cards {
+  margin-top: 12vh;
+  margin-bottom: 6vh;
   padding: 40px;
   height: auto;
   align-items: center;
-  /* background-color: var(--offwhite); */
+  background: url('../assets/images/white-orchid.jpg') no-repeat fixed;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+
+  /* background-color: var(--flowerpinkop); */
 }
 
 .card {
+  background-color: var(--whttext);
+  color: var(--greendk);
   font-size: 3.8rem;
   height: 250px;
   width: 250px;
@@ -452,7 +478,6 @@ a {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
   margin: 30px;
-  background-color: var(--flowerpinkop);
 }
 
 .card:hover {
@@ -467,6 +492,7 @@ a {
 }
 
 .card-header {
+  color: var(--greendk);
   margin: 20px;
   font-size: 4.2rem;
 }
@@ -678,16 +704,25 @@ a {
 }
 
 .card-btn-holder {
-  background-color: var(--topflowerop);
-  color: var(--blktext);
-  width: 250px;
-  height: 10vh;
+  background-color: var(--whttext);
+  color: var(--greendk);
+  width: auto;
+  height: auto;
   text-decoration: none;
   font-size: 2.2rem;
   border-radius: 40px;
   border: none;
   transition: 0.3s;
-  padding: 8px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.card-btn-holder a {
+  color: var(--greendk);
+}
+
+.card-btn {
+  margin-top: 20px;
 }
 
 .btn-4 {
