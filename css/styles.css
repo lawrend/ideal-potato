@@ -25,6 +25,22 @@
 
 /* COLORS */
 :root {
+  --pinkflower: #E78CA5;
+  --pinkflowerop: #E78CA599;
+  --bluewater: #5583a6;
+  --bluewaterop: #5583a699;
+  --greenlily: #235123;
+  --greenlilyop: #23512399;
+  --ipoffwhite: #ccccbb;
+  --ipoffwhiteop: #ccccbb99;
+  --ipdkblue: #1a7c91;
+  --ipdkblueop: #1a7c9199;
+  --iplightblue: #76a3aa;
+  --iplightblueop: #76a3aa50;
+  --ipbrown: #87553b;
+  --ipbrownop: #87553b99;
+  --ippurple: #72526f;
+  --ippurpleop: #72526f99;
   --offwhite:  #f6f1ee; 
   --primarylt: #fbdcce;
   --primaryltop: #fbdcce70;
@@ -35,7 +51,7 @@
   --secondarydk: #5583a6;
   --secondaryaltop: #4B6BA680;
   --secondary: #4B6BA6;
-  --secondaryalt: #A4D2EC;
+  /* --secondaryalt: #A4D2EC; */
   --secondaryslightop: #5583a699;
   --tertiary:  #f6c270;
   --tertiaryop: #f6c27070;
@@ -163,7 +179,7 @@ p {
   left: -100%;
   top: 6vh;
   flex-direction: column;
-  background-color: var(--secondary);
+  background-color: var(--ipdkblue);
   width: 100%;
   text-align: left;
   transition: 0.3s;
@@ -178,7 +194,7 @@ p {
 .nav-logo {
   font-size: 2.3rem;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--ipdkblue);
 }
 
 .nav-menu.active {
@@ -186,7 +202,7 @@ p {
 }
 
 .nav-link {
-  color: var(--primarylt);
+  color: var(--ipoffwhite);
   text-decoration: none;
 }
 
@@ -374,7 +390,7 @@ a {
 /* TEXT BOXES */
 
 .text-box-buffer {
-  background-image: url('../assets/SVG/flowerpinkbg.png');
+  background-image: url('../assets/SVG/ipblob.svg');
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center;
@@ -393,10 +409,15 @@ a {
   font-size: 2.5rem;
 }
 
+.intro-text-box {
+  /* background-color: var(--ipoffwhiteop); */
+  height: auto;
+}
+
 .text-2 {
   padding: 3vh 15vw 3vh 15vw;
-  background-color: var(--greenlt);
-  color: var(--secondary);
+  /* background-color: var(--greenlt); */
+  color: var(--ipbrown);
   height: auto;
   /* margin: 0 3vw 0 3vw; */
 }
@@ -405,11 +426,14 @@ a {
   font-size: 2.5rem;
 }
 
+.text-2-text {
+  padding: 10px 20px 10px 20px;
+}
 
 .text-3 {
   padding: 3vh 15vw 3vh 15vw;
-  background-color: var(--flowerpink);
-  color: var(--secondary);
+  background-color: var(--pinkflower);
+  color: var(--ipdkblue);
   height: auto;
   margin: 0 3vw 0 3vw;
 }
@@ -420,7 +444,7 @@ a {
   margin: 0 3vw 0 3vw;
   padding: 3vh 15vw 3vh 15vw;
   /* padding: 40px; */
-  background-color: var(--secondaryalt);
+  background-color: var(--iplightblue);
   color: var(--whttext);
   height: auto;
 }
@@ -438,7 +462,7 @@ a {
   /* background-size: cover; */
   margin: 0 3vw 0 3vw;
   padding: 3vh 15vw 3vh 15vw;
-  background-color: var(--flowerpinkop);
+  background-color: var(--pinkflowerop);
   height: auto;
 }
 
@@ -455,10 +479,11 @@ a {
 .text-box-with-cards {
   margin-top: 12vh;
   margin-bottom: 6vh;
-  padding: 40px;
+  width: 100vw;
+  /* padding: 40px; */
   height: auto;
   align-items: center;
-  background: url('../assets/images/white-orchid.jpg') no-repeat fixed;
+  background: url('../assets/svg/iplongblob.png') no-repeat fixed;
   /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center;
@@ -467,8 +492,8 @@ a {
 }
 
 .card {
-  background-color: var(--whttext);
-  color: var(--greendk);
+  background-color: var(--iplightblue);
+  color: var(--whttext);
   font-size: 3.8rem;
   height: 250px;
   width: 250px;
@@ -488,7 +513,7 @@ a {
 .card .-content {
   padding: 16px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }
 
 .card-header {
@@ -602,7 +627,7 @@ a {
 
 /* HEADER */
 .header {
-  background-image: url('../assets/images/pink-lotus.jpg');
+  background-image: url('../assets/images/pink-lotus-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -632,7 +657,7 @@ a {
   align-items: center;
   align-content: center;
   text-align: center;
-  background-color: var(--secondaryaltop);
+  background-color: var(--ipdkblueop);
 }
 .header-text {
 }
@@ -780,7 +805,7 @@ a {
 
 .line {
   width: 60%;
-  color: var(--secondary);
+  color: var(--ipoffwhite);
 }
 
 ._full-width
@@ -928,8 +953,8 @@ img
   padding-bottom: 10px;
   font-size: .7em;
   /* background-image: linear-gradient(var(--primarydkop), var(--primarydk)); */
-  background-color: var(--greenlt);
-  color: var(--secondary);
+  background-color: var(--iplightblueop);
+  color: var(--ipdkblue);
   width: 100%;
   bottom: 0;
   position: relative;
